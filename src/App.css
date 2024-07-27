@@ -347,13 +347,14 @@ footer .cop{
     margin: 20px;
   text-align: center;
     grid-template-columns: 1fr;
+    width: 100%;
   }
   .list-skills{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    padding: 20px;
-    gap: 20px;
+    display: flex;
+   flex-wrap: wrap;
+  
+   
+    gap: 10px;
    
   }
 }
