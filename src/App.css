@@ -298,9 +298,13 @@ footer .cop{
     z-index: 10;
     flex-direction: column;
     position: fixed;
+    justify-content: space-around;
     top: 50px;
-    background: #b15e11;
+    left: 0;
+    background: #60696d;
     width: 100%;
+    
+    padding: 10px;
     transition: transform .5s ease-in-out;
   }
   .container header nav ul li{
@@ -308,7 +312,7 @@ footer .cop{
   }
   .container header nav ul.active{
     transform: translateY(0);
-    
+  
     width: 100%;
     z-index: 10;
     
