@@ -294,7 +294,7 @@ footer .cop{
   .container header nav button{
    position: fixed;
    top: 10px;
-   right: 10px;
+   right: 30px;
 
    border: none;
   outline: #fff;
@@ -358,7 +358,7 @@ footer .cop{
     margin: 20px;
   text-align: center;
     grid-template-columns: 1fr;
-    width: 100%;
+    width: 95%%;
   }
   .list-skills{
     display: flex;
