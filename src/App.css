@@ -292,7 +292,9 @@ footer .cop{
   }
  
   .container header nav button{
-  
+   position: fixed;
+   top: 10px;
+   right: 10px;
 
    border: none;
   outline: #fff;
