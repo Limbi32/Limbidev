@@ -112,10 +112,11 @@ function App() {
         <nav>
         
                 <ul ref={refburger} className=''>
-             <li><a href="">Accueil</a></li>
-             <li><a href="">A propos</a></li>
-             <li><a href="">Projets</a></li>
-             <li><a href="">Contact</a></li>
+             <li><a href="#accueil">Accueil</a></li>
+             <li><a href="#propos">A propos</a></li>
+             <li><a href="#projet">Projets</a></li>
+             <li><a href="#skills">Compétences</a></li>
+             <li><a href="#contact">Contact</a></li>
           
            </ul>
            {taille<900 && <button onClick={handlermenu} className="menu">
@@ -129,13 +130,13 @@ function App() {
         
         <div className="presentation">
         <img  src={Profil} alt="" />
-            <div className="slide">
+            <div id='accueil' className="slide">
             <h1>Developpeur Full-stack</h1>
             <p>LIMBIARISAONA François d'assise</p>
             </div>
             {/* <button>Download CV</button> */}
         </div>
-        <div className="about">
+        <div id='propos' className="about">
               <h3>A Propos</h3>
               <div className="desc">
                 <div ref={profilref} className="img">
@@ -152,7 +153,7 @@ function App() {
                 </div>
               </div>
         </div>
-        <div className="projects">
+        <div id='projet' className="projects">
             <h3>Mes réalisations</h3>
             <div className="list-projects">
               <div ref={refprojet1} className="detail-project">
@@ -188,7 +189,7 @@ function App() {
 
             </div>
         </div>
-        <div className="skills">
+        <div id='skills' className="skills">
             <h3>Mes compétences</h3>
             <div ref={refskills} className="list-skills">
              
@@ -231,7 +232,7 @@ function App() {
               </div>
             </div>
         </div>
-        <div className="contact">
+        <div id='contact' className="contact">
         <h3>Contact</h3>
 
         <div className="form">

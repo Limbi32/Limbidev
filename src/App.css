@@ -25,11 +25,13 @@ h3{
   color: #fff;
 }
 .container header{
-
+ 
   display: flex;
   justify-content: space-between;
   padding: 10px;
-
+ 
+ 
+  
  
 }
 .container .logo{
@@ -135,15 +137,20 @@ margin: 0 20px;
 }
 .list-projects{
   display: flex;
+  justify-content: center;
   gap: 20px;
-  margin: 20px;
+
 text-align: center;
-  grid-template-columns: 1fr 1fr 1fr;
+width: 100%;
+
 }
 .list-projects .detail-project{
   display: flex;
+  width: 90%;
   flex-direction: column;
   gap: 20px;
+  
+  
 }
 .list-projects .detail-project img{
   width: 100%;
