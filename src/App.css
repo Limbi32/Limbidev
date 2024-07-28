@@ -7,7 +7,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
  .slide h1{
   font-size: calc(25px + 3vw);
@@ -19,8 +19,8 @@ h3{
 }
 .container{
   background: #37393A;
-  width: 100vw;
-  position: relative;
+  width: 100%;
+
 
   color: #fff;
 }
@@ -288,13 +288,13 @@ footer .cop{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    position:relative
+ 
   }
  
   .container header nav button{
    position: fixed;
    top: 10px;
-   right: 30px;
+   right: 10px;
 
    border: none;
   outline: #fff;
