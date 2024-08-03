@@ -21,15 +21,18 @@ h3{
   background: #37393A;
   width: 100%;
 
-
+  position: relative;
   color: #fff;
 }
 .container header{
-
+  background: #37393A;
+  width: 100%;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   padding: 10px;
- 
+ position: fixed;
+ height: 50px;
  
   
  
@@ -78,8 +81,8 @@ h3{
 }
 .container .corps .presentation .slide{
   position: absolute;
-  transform: translate(-50%,-30%);
-  top: 30%;
+  transform: translate(-50%,-50%);
+  top: 50%;
   left: 50%;
   text-align: center;
   margin: 10px;
@@ -288,42 +291,45 @@ footer .cop{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    position: relative;
- width: 100%;
+    width: 100%;
+    
+  }
+  .container header nav{
+    display: flex;
+    flex-direction: column-reverse;
+
+    gap: 5px;
+    width: 100%;
+    
   }
  
   .container header nav button{
-   position: fixed;
-   top: 10px;
-   right: 30px;
-
+   position:absolute;
+   top: 5px;
+   right: 10px;
    border: none;
   outline: #fff;
     
   }
   .container header nav ul{
     transform: translateY(-200%);
-    z-index: 10;
+   
     flex-direction: column;
-    position: fixed;
+   z-index: 5;
     justify-content: space-around;
-    top: 50px;
-    left: 0;
+    
     background: #60696d;
-    width: 100%;
+    width: 114%;
     
     padding: 10px;
     transition: transform .5s ease-in-out;
   }
   .container header nav ul li{
     text-align: center;
+    width: 100%;
   }
   .container header nav ul.active{
     transform: translateY(0);
-  
-   
-    z-index: 10;
-    
     
       display: flex;
       flex-direction: column;
@@ -336,6 +342,7 @@ footer .cop{
    color: #fff;
    background: none;
    width: 30px;
+   height: 20px;
     
   }
 
