@@ -162,11 +162,11 @@ function App() {
                     <li>React</li>
                 </ul>
                <div className="visite">
-               <p>Homepage</p><a href="">Visiter</a>
+               <p>Homepage</p><a href="https://homepage01.vercel.app/">Visiter</a>
                </div>
               </div>
               <div ref={refprojet2} className="detail-project">
-                <img src={dessert} alt="https://homepage01.vercel.app/" />
+                <img src={dessert} alt="" />
                   <ul className="techno">
                     <li>React</li>
                     <li>Node js</li>
