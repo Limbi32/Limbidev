@@ -7,6 +7,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 
 }
  .slide h1{
@@ -292,30 +293,31 @@ footer .cop{
     flex-direction: column;
     gap: 5px;
     width: 100%;
+    z-index: 10;
     
   }
   .container header nav{
     display: flex;
     flex-direction: column-reverse;
-
+    z-index: 5;
     gap: 5px;
     width: 100%;
+ 
     
   }
  
   .container header nav button{
    position:absolute;
    top: 5px;
-   right: 10px;
+   right: 20px;
    border: none;
   outline: #fff;
     
   }
   .container header nav ul{
     transform: translateY(-200%);
-   
+  border-radius: 10px;
     flex-direction: column;
-   z-index: 5;
     justify-content: space-around;
     
     background: #60696d;
@@ -323,6 +325,7 @@ footer .cop{
     
     padding: 10px;
     transition: transform .5s ease-in-out;
+    
   }
   .container header nav ul li{
     text-align: center;
@@ -335,6 +338,7 @@ footer .cop{
       flex-direction: column;
       gap: 20px;
       color: #fff;
+      margin: 0;
     
     }
   
