@@ -32,8 +32,8 @@ h3{
 }
 .container .logo{
   font-family: fantasy;
-  color: #A9927D;
-  font-size: calc(10px + 2vw);
+  color: #1b918b;
+  font-size: clamp(5px, 5vw, 25px);
 }
 .container header nav{
   display: flex;
@@ -267,12 +267,13 @@ flex-direction: column;
 }
 footer{
   width: 100vw;
+  font-size: calc(5px + 1vw);
  
  
 }
 footer .cop{
   text-align: center;
-  padding: 2vw;
+  padding: 10px;
   background: #60696d;
 }
 
@@ -283,8 +284,9 @@ footer .cop{
   .container header{
     display: flex;
     flex-direction: column;
-    
+    gap: 20px;
     width: 100%;
+    justify-content: space-between;
     z-index: 10;
     
   }
@@ -295,12 +297,13 @@ footer .cop{
     gap: 5px;
     width: 100%;
  
+ 
     
   }
  
   .container header nav button{
    position:absolute;
-   top: 5px;
+   top: 10px;
    right: 25px;
    border: none;
   outline: #fff;
@@ -308,14 +311,14 @@ footer .cop{
     
   }
   .container header nav ul{
-    transform: translateY(-200%);
+    transform: translateX(200%);
   border-radius: 10px;
     flex-direction: column;
     justify-content: space-around;
     
     background: #60696d;
     width: 100%;
-    
+  
     padding: 10px;
     transition: transform .5s ease-in-out;
     
@@ -325,7 +328,7 @@ footer .cop{
     width: 100%;
   }
   .container header nav ul.active{
-    transform: translateY(0);
+    transform: translateX(0%);
     
       display: flex;
       flex-direction: column;
@@ -334,10 +337,14 @@ footer .cop{
       margin: 0;
     
     }
+    .container header nav .menu{
+     background: none;
+    }
   
   .container header nav .menu img{
-   color: #fff;
-   background: none;
+   
+   
+
    width: 30px;
    height: 20px;
     
@@ -368,8 +375,6 @@ footer .cop{
   .list-skills{
     display: flex;
    flex-wrap: wrap;
-  
-   
     gap: 10px;
    
   }

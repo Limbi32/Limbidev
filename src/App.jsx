@@ -68,6 +68,14 @@ function App() {
     const refprojet3=useRef(null)
     const profilref=useRef(null)
     const refburger=useRef(null)
+
+    // const handlermenu1=()=>{
+    //   setBurgeractive(!burgeractive)
+    //   if (burgeractive===false) {
+    //     refburger.current.classList.remove('active')
+    //   }
+    // }
+
     const handlermenu=()=>{
       setBurgeractive(!burgeractive)
       if (burgeractive===false) {
@@ -112,11 +120,11 @@ function App() {
         <nav>
         
                 <ul ref={refburger} className=''>
-             <li><a href="#accueil">Accueil</a></li>
-             <li><a href="#propos">A propos</a></li>
-             <li><a href="#projet">Projets</a></li>
-             <li><a href="#skills">Compétences</a></li>
-             <li><a href="#contact">Contact</a></li>
+             <li><a onClick={handlermenu} href="#accueil">Accueil</a></li>
+             <li><a onClick={handlermenu} href="#propos">A propos</a></li>
+             <li><a onClick={handlermenu} href="#projet">Projets</a></li>
+             <li><a onClick={handlermenu} href="#skills">Compétences</a></li>
+             <li><a onClick={handlermenu} href="#contact">Contact</a></li>
           
            </ul>
            {taille<900 && <button onClick={handlermenu} className="menu">
@@ -203,8 +211,16 @@ function App() {
                 <p>REACT</p>
               </div>
               <div className="desc-skills">
+                <img src={react} alt="" />
+                <p>EXPRESS JS</p>
+              </div>
+              <div className="desc-skills">
                 <img src={node1} alt="" />
                 <p>NODE</p>
+              </div>
+              <div className="desc-skills">
+                <img src={react} alt="" />
+                <p>PHP/LARAVEL</p>
               </div>
               <div className="desc-skills">
                 <img src={git} alt="" />
@@ -227,8 +243,8 @@ function App() {
                 <p>MYSQL</p>
               </div>
               <div className="desc-skills">
-                <img src={figma} alt="" />
-                <p>FIGMA</p>
+                <img src={react} alt="" />
+                <p>WORDPRESS</p>
               </div>
             </div>
         </div>
