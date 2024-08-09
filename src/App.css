@@ -67,6 +67,7 @@ h3{
 }
 .container header nav ul a:hover{
   border-bottom:2px solid #fff ;
+  
 }
 .container header nav ul li a{
   text-decoration: none;
@@ -77,14 +78,13 @@ h3{
 }
 .corps{
   font-family: "Lato", sans-serif;
-  background: #3C3B3F;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+/* 
+  position: sticky; */
   font-style: normal
 }
 .container .corps .presentation{
   position: relative;
+  
 
 }
 .container .corps .presentation img{
@@ -92,6 +92,10 @@ h3{
   height: 100vh;
   object-fit: cover;
   filter: brightness(10%);
+  background: #3C3B3F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   
 }
 .container .corps .presentation .slide{
@@ -149,10 +153,7 @@ margin: 0 20px;
 }
 .container .corps .projects{
   width: 100%;
-  background: #3C3B3F;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  position: sticky;
   
 
 }
@@ -204,7 +205,10 @@ width: 100%;
 
  }
  .list-projects .detail-project .visite a:hover{
-  background: #b15e11;
+background: #355C7D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   
  }
 .container .corps div h3{
@@ -213,6 +217,7 @@ width: 100%;
   
 }
 .container .corps .skills{
+  position: sticky;
   width: 100%;
 display: flex;
 justify-content: center;
@@ -261,7 +266,6 @@ display: flex;
 flex-direction: column;
 
 
- 
 
 }
 .form{
@@ -287,9 +291,16 @@ flex-direction: column;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+  
 }
 .form button:hover{
-  background: #b15e11;
+ background: #355C7D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 footer{
   width: 100vw;
@@ -300,7 +311,10 @@ footer{
 footer .cop{
   text-align: center;
   padding: 10px;
-  background: #60696d;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+  
 }
 
 @media screen and (max-width: 900px)

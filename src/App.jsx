@@ -153,13 +153,66 @@ function App() {
                     <img src={pdp} alt="" />
                 </div>
                 <div  ref={ref2} className="renseignement">
-                  Je m'appelle LIMBIARISAONA François d'Assise, developpeur web full-stack, disposant un diplome
-                  de MASTER en informatique. J'habite a madagascar, j'ai etudié à l'ecole normale a antsiranana.
-                  je suis de nationalite malagasy. En ce moment, je travaille en tant que developpeur web 
-                  freelance. je suis ici pour vous aider dans votre business, si vous avez besoin d'un site pour booster 
-                   votre presence en ligne, je suis à votre disposition. Je peut faire different type de site 
-                   que ce soit un site vitrine, un site e-commerce, un site pour un restaurant, etc.... Si vous avez besoin de mes service n'hesitez pas à me
-                    contactez.
+              
+<p>
+Je suis LIMBIARISAONA François d'Assise, Développeur Web Full Stack Freelance
+Passionné par le développement web et l'innovation technologique, je suis LIMBIARISAONA
+ François d'Assise, un développeur web full stack avec un an d'expérience dans la création 
+ de solutions numériques complètes. Mon objectif est de transformer vos idées en applications 
+ et sites web performants, élégants et fonctionnels.
+
+</p>
+<p>
+Ce que je fais :
+En tant que développeur web full stack, je prends en charge chaque aspect du développement de vos projets :
+
+Développement Frontend : Création d'interfaces utilisateur modernes et réactives en utilisant
+ HTML, CSS, JavaScript et des frameworks tels que React, Vue.js ou Angular. J'assure que vos sites 
+ sont non seulement esthétiques mais aussi optimisés pour tous les appareils.
+
+Développement Backend : Conception et gestion des aspects serveur de vos applications avec
+ des technologies comme Node.js, Python, Ruby on Rails, PHP ou Java. Je m'assure que la logique métier
+  est robuste, sécurisée et évolutive.
+
+Gestion de Bases de Données : Conception et optimisation de bases de données SQL
+ (MySQL) pour garantir une gestion efficace des données.
+
+Intégration et Déploiement : Mise en place de pipelines CI/CD pour automatiser les déploiements, 
+gestion des environnements de staging et de production, et déploiement sur des plateformes telles 
+qu'AWS, Heroku ou DigitalOcean.
+
+Optimisation et Maintenance : Analyse des performances des applications, 
+correction des bugs et mise à jour continue pour garantir une expérience utilisateur 
+fluide et sécurisée.
+
+</p>
+<p>
+  
+<h5>Pourquoi me choisir ?</h5>
+
+<ul>
+  <li>Expertise Complète : Avec une maîtrise approfondie des technologies frontend et backend, 
+je vous offre une solution intégrée qui couvre tous les aspects de vos projets web.</li>
+  <li>Approche Personnalisée : Je prends le temps de comprendre
+ vos besoins spécifiques et de vous offrir des solutions adaptées qui répondent à vos objectifs.</li>
+  <li>Qualité et Fiabilité : Mon engagement est de livrer des projets de haute qualité, 
+dans les délais impartis et en respectant le budget convenu.</li>
+</ul>
+
+
+
+
+
+
+Contactez-moi !
+Vous avez un projet en tête ou des questions sur mes services ? N'hésitez pas à me contacter pour discuter de vos besoins. Je suis disponible pour des consultations gratuites et je serais ravi de vous aider à réaliser vos idées.
+
+</p>
+Email :bondmandev@gmail.com
+Téléphone :+261324325888
+
+Merci de visiter mon portfolio. J'ai hâte de collaborer avec vous !
+
                 </div>
               </div>
         </div>
@@ -249,6 +302,10 @@ function App() {
                 <p>WORDPRESS</p>
               </div>
             </div>
+        </div>
+
+        <div className="service">
+          
         </div>
         <div id='contact' className="contact">
         <h3>Contact</h3>
