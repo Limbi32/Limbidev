@@ -7,11 +7,13 @@ import js from './assets/js.jpg'
 import git from './assets/git.jpg'
 import jquery from './assets/jquery.jpg'
 import node1 from './assets/node1.jpg'
+import express1 from './assets/express.jpg'
+import laravel from './assets/laravel.png'
 import react from './assets/react.jpg'
 import sql from './assets/sql.jpg'
 import bootstrap from './assets/bootstrap.jpg'
 import mysql from './assets/mysql.jpg'
-import figma from './assets/figma.jpg'
+import wordpress from './assets/wordpress.png'
 import homepage from './assets/homepage.jpg'
 import dessert from './assets/dessert.jpg'
 import galerie from './assets/galerie.jpg'
@@ -211,7 +213,7 @@ function App() {
                 <p>REACT</p>
               </div>
               <div className="desc-skills">
-                <img src={react} alt="" />
+                <img src={express1} alt="" />
                 <p>EXPRESS JS</p>
               </div>
               <div className="desc-skills">
@@ -219,7 +221,7 @@ function App() {
                 <p>NODE</p>
               </div>
               <div className="desc-skills">
-                <img src={react} alt="" />
+                <img src={laravel} alt="" />
                 <p>PHP/LARAVEL</p>
               </div>
               <div className="desc-skills">
@@ -243,7 +245,7 @@ function App() {
                 <p>MYSQL</p>
               </div>
               <div className="desc-skills">
-                <img src={react} alt="" />
+                <img src={wordpress} alt="" />
                 <p>WORDPRESS</p>
               </div>
             </div>
