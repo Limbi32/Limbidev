@@ -122,8 +122,8 @@ h3{
 }
 .container .corps .about{
   width: 100%;
-  
-  background: #fff;
+  padding: 20px;
+  background: #c9c2c2;
 color: #000;
  
 }
@@ -137,7 +137,7 @@ color: #000;
 }
 .container .corps .about .desc img{
   width: 35vw;
-
+  border-radius: 20px;
   object-fit: cover;
 margin: 0 20px;
  
@@ -145,16 +145,35 @@ margin: 0 20px;
 }
 
 .renseignement{
-  padding: 0 20px;
+  padding: 5px 30px;
   font-size: clamp(15px, 1.5vw, 300px);
   line-height: 2;
   color: #000;
+  font-size:16px;
+
   font-family: Arial, Helvetica, sans-serif;
+}
+.renseignement p{
+  padding: 20px;
+}
+.renseignement p h4{
+  font-size: 20px;
+  color:#b15e11;
+}
+.renseignement p ol{
+  padding: 20px;
+}
+.renseignement p ol li{
+  padding: 10px;
+}
+.renseignement p span{
+  color:#b15e11;
+  font-weight: bold;
 }
 .container .corps .projects{
   width: 100%;
   position: sticky;
-  
+  padding: 30px;
 
 }
 .list-projects{
@@ -213,7 +232,8 @@ background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+
  }
 .container .corps div h3{
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  
   
 }
 .container .corps .skills{
@@ -224,7 +244,7 @@ justify-content: center;
 background: #355C7D;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+padding: 20px;
 flex-direction: column;
 
 
@@ -260,12 +280,52 @@ padding: 5px;
   object-fit: contain;
 
 }
+.service{
+  padding: 10px 10px 30px 10px;
+}
+.service .list-service{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.service .list-service div{
+  display: flex;
+color: #8b8282;
+box-shadow: 0px 2px 2px 0px #e4dede;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  background: #000;
+  padding: 20px;
+  border-radius: 20px;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526);  
+  width: 200px;
+  
+  
+}
+.service .list-service div:hover{
+  background: #4b4c4d; 
+}
+.service .list-service div h4{
+  color: #dbd2d2;
+}
+.service .list-service img{
+  width: 100px;
+  border-radius: 10px;
+}
 .container .corps .contact{
-
+padding: 20px;
 display: flex;
 flex-direction: column;
 
-
+background: #355C7D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .form{
@@ -311,9 +371,10 @@ footer{
 footer .cop{
   text-align: center;
   padding: 10px;
+  color: #817b7b;
   background: #232526;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+  background: linear-gradient(to right, #414345, #232526);  
   
 }
 
@@ -336,8 +397,7 @@ footer .cop{
     gap: 5px;
     width: 100%;
  
- 
-    
+   
   }
  
   .container header nav button{
@@ -361,13 +421,14 @@ footer .cop{
     
     width: 100%;
   
-    padding: 10px;
+    padding: 30px;
     transition: transform .5s ease-in-out;
     
   }
   .container header nav ul li{
     text-align: center;
     width: 100%;
+    
   }
   .container header nav ul.active{
     transform: translateX(0%);

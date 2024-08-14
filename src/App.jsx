@@ -10,13 +10,17 @@ import node1 from './assets/node1.jpg'
 import express1 from './assets/express.jpg'
 import laravel from './assets/laravel.png'
 import react from './assets/react.jpg'
-import sql from './assets/sql.jpg'
 import bootstrap from './assets/bootstrap.jpg'
 import mysql from './assets/mysql.jpg'
 import wordpress from './assets/wordpress.png'
 import homepage from './assets/homepage.jpg'
 import dessert from './assets/dessert.jpg'
 import galerie from './assets/galerie.jpg'
+import frontend from './assets/frontend.png'
+import backend from './assets/backend.jfif'
+import bdd from './assets/bdd.jfif'
+import deploie from './assets/deploie.jfif'
+import maintien from './assets/maintien.jfif'
 import pdp from './assets/pdp.jpg'
 import Input from './Components/Form/Input'
 import Textarea from './Components/Form/Textarea'
@@ -27,6 +31,9 @@ import { useEffect, useRef, useState } from 'react'
 
 
 function App() {
+
+  const [isSent, setIsSent] = useState(false);
+  const [error, setError] = useState(null);
 
     const [value,setValue]=useState('')
     const [value1,setValue1]=useState('')
@@ -39,8 +46,8 @@ function App() {
    
         if (entry.isIntersecting) {
           entry.target.animate([ 
-            {transform:'translateX(100px)',opacity:0},
-            {transform:'translateX(50px)',opacity:1}
+            {transform:'translateY(10px)',opacity:0},
+            {transform:'translateY(0px)',opacity:1}
           ],{
             duration: 500
           })
@@ -126,6 +133,7 @@ function App() {
              <li><a onClick={handlermenu} href="#propos">A propos</a></li>
              <li><a onClick={handlermenu} href="#projet">Projets</a></li>
              <li><a onClick={handlermenu} href="#skills">Compétences</a></li>
+             <li><a onClick={handlermenu} href="#service">Services</a></li>
              <li><a onClick={handlermenu} href="#contact">Contact</a></li>
           
            </ul>
@@ -156,62 +164,40 @@ function App() {
               
 <p>
 Je suis LIMBIARISAONA François d'Assise, Développeur Web Full Stack Freelance
-Passionné par le développement web et l'innovation technologique, je suis LIMBIARISAONA
- François d'Assise, un développeur web full stack avec un an d'expérience dans la création 
+Passionné par le développement web et l'innovation technologique, avec un an d'expérience dans la création 
  de solutions numériques complètes. Mon objectif est de transformer vos idées en applications 
  et sites web performants, élégants et fonctionnels.
 
 </p>
 <p>
-Ce que je fais :
-En tant que développeur web full stack, je prends en charge chaque aspect du développement de vos projets :
-
-Développement Frontend : Création d'interfaces utilisateur modernes et réactives en utilisant
- HTML, CSS, JavaScript et des frameworks tels que React, Vue.js ou Angular. J'assure que vos sites 
- sont non seulement esthétiques mais aussi optimisés pour tous les appareils.
-
-Développement Backend : Conception et gestion des aspects serveur de vos applications avec
- des technologies comme Node.js, Python, Ruby on Rails, PHP ou Java. Je m'assure que la logique métier
-  est robuste, sécurisée et évolutive.
-
-Gestion de Bases de Données : Conception et optimisation de bases de données SQL
- (MySQL) pour garantir une gestion efficace des données.
-
-Intégration et Déploiement : Mise en place de pipelines CI/CD pour automatiser les déploiements, 
-gestion des environnements de staging et de production, et déploiement sur des plateformes telles 
-qu'AWS, Heroku ou DigitalOcean.
-
-Optimisation et Maintenance : Analyse des performances des applications, 
-correction des bugs et mise à jour continue pour garantir une expérience utilisateur 
-fluide et sécurisée.
-
+  
+Contactez-moi !
+Vous avez un projet en tête ou des questions sur mes services ? N'hésitez pas à me
+ contacter pour discuter de vos besoins. Je suis disponible pour
+ des consultations gratuites et je serais ravi de vous aider à réaliser vos idées.
 </p>
 <p>
   
-<h5>Pourquoi me choisir ?</h5>
+<h4>Pourquoi me choisir ?</h4>
 
-<ul>
+<ol>
   <li>Expertise Complète : Avec une maîtrise approfondie des technologies frontend et backend, 
 je vous offre une solution intégrée qui couvre tous les aspects de vos projets web.</li>
   <li>Approche Personnalisée : Je prends le temps de comprendre
  vos besoins spécifiques et de vous offrir des solutions adaptées qui répondent à vos objectifs.</li>
   <li>Qualité et Fiabilité : Mon engagement est de livrer des projets de haute qualité, 
 dans les délais impartis et en respectant le budget convenu.</li>
-</ul>
+</ol>
 
 
 
+<br />
+<span>Email:</span> bondmandev@gmail.com <br />
+<span>Téléphone:</span> +261324325888 <br />
 
-
-
-Contactez-moi !
-Vous avez un projet en tête ou des questions sur mes services ? N'hésitez pas à me contacter pour discuter de vos besoins. Je suis disponible pour des consultations gratuites et je serais ravi de vous aider à réaliser vos idées.
-
+Merci de visiter mon portfolio. J'ai hâte de collaborer avec vous!
 </p>
-Email :bondmandev@gmail.com
-Téléphone :+261324325888
 
-Merci de visiter mon portfolio. J'ai hâte de collaborer avec vous !
 
                 </div>
               </div>
@@ -289,10 +275,7 @@ Merci de visiter mon portfolio. J'ai hâte de collaborer avec vous !
                 <img src={bootstrap} alt="" />
                 <p>BOOTSTRAP</p>
               </div>
-              <div className="desc-skills">
-                <img src={sql} alt="" />
-                <p>SQL</p>
-              </div>
+             
               <div className="desc-skills">
                 <img src={mysql} alt="" />
                 <p>MYSQL</p>
@@ -307,19 +290,65 @@ Merci de visiter mon portfolio. J'ai hâte de collaborer avec vous !
         <div className="service">
           
         </div>
+
+        <div  id='service' className="service">
+        <h3>Mes services</h3>
+           <div className="list-service">
+                <div className="service1">
+                 <h4> Développement Frontend</h4>
+                 <img src={frontend} alt="" />
+                 <p>
+                 Création d'interfaces utilisateur modernes et réactives  
+                 </p>
+                  </div>
+                <div className="service2">
+                 <h4> Développement Backend </h4>
+                 <img src={backend} alt="" />
+                 <p>Conception et gestion des aspects serveur de vos applications </p>
+                  </div>
+                <div className="service3">
+                  
+                 <h4> Gestion de Bases de Données</h4>
+                 <img src={bdd} alt="" />
+                 <p>
+                 Conception et optimisation de bases de données
+                 </p>
+                  </div>
+                <div className="service4">
+                 <h4> Intégration et Déploiement</h4>
+                 <img src={deploie} alt="" />
+                 <p>
+                 Déploiement sur des plateformes telles 
+    qu'AWS, Heroku ou DigitalOcean
+                 </p>
+                  </div>
+                <div className="service5">
+                  
+                <h4>  Optimisation et Maintenance</h4>
+                <img src={maintien} alt="" />
+                <p>
+                Analyse des performances des applications
+                </p>
+                  </div>
+           </div>
+        </div>
+
         <div id='contact' className="contact">
         <h3>Contact</h3>
 
         <div className="form">
        
             <div className="cont-form">
-            <Input type='text' placeholder='Sujet de votre message'  value={value} onchange={handleChange} label='Subject' />
-            <Input type='email' placeholder=' Votre mail' value={value1} onchange={handleChange1}  label='Mail' />
-            <Textarea />
+                <Input type='text' placeholder='Sujet de votre message'  value={value} onchange={handleChange} label='Subject' />
+                <Input type='email' placeholder=' Votre mail' value={value1} onchange={handleChange1}  label='Mail' />
+                <Textarea />
             </div>
             <button>Envoyer</button>
        
         </div>
+
+       
+
         </div>
       </div>
       <footer>
