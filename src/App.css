@@ -12,8 +12,9 @@ body{
   color: #A9927D;
 }
 h3{
-  font-size: clamp(25px, 10vw, 50px);
+  font-size: clamp(20px, 10vw, 40px);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 20px 10px 20px;
 }
 .container{
   background: #bdc3c7;  /* fallback for old browsers */
@@ -236,7 +237,7 @@ background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+
   
   
 }
-.container .corps .skills{
+.container  .skills{
   position: sticky;
   width: 100%;
 display: flex;
@@ -282,6 +283,8 @@ padding: 5px;
 }
 .service{
   padding: 10px 10px 30px 10px;
+
+  
 }
 .service .list-service{
   display: flex;
@@ -289,6 +292,7 @@ padding: 5px;
   gap: 30px;
   padding: 20px;
   flex-wrap: wrap;
+  
 }
 .service .list-service div{
   display: flex;
@@ -318,17 +322,17 @@ box-shadow: 0px 2px 2px 0px #e4dede;
   width: 100px;
   border-radius: 10px;
 }
-.container .corps .contact{
+.container  .contact{
 padding: 20px;
 display: flex;
 flex-direction: column;
 
 background: #355C7D;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
 
 }
-.form{
+.form form {
   display: flex;
   flex-direction: column;
  
@@ -347,8 +351,9 @@ background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+
   width: 100px;
   background: #60696d;
   color: #fff;
+  box-shadow: 0px 2px 2px 0px #e4dede;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
   background: #232526;  /* fallback for old browsers */
@@ -403,7 +408,7 @@ footer .cop{
   .container header nav button{
    position:absolute;
    top: 10px;
-   right: 25px;
+   right: 22px;
    border: none;
   outline: #fff;
   cursor: pointer;
@@ -482,4 +487,6 @@ footer .cop{
     gap: 10px;
    
   }
+
 }
+
